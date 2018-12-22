@@ -20,4 +20,4 @@ The use of this add-on is simple, all you have to do is follow the steps below:
 
 In the case of any bugs you can mention me on twitter [at HamadaTrichine](https://twitter.com/hamadatrichine), or [send me an email.](mailto:hamadalog25@gmail.com)
 
-[1]: http://hamadatr.servegame.com/nvdaAddons
+[1]: https://github.com/hamadatrichine/nvda-screen-rapping/releases/download/v1.3/screenRapping-1.3.nvda-addon
