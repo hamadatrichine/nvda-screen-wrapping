@@ -1,6 +1,7 @@
 # screenRapping
 # Copyright 2018 Hamada Trichine, released under GPLv2.
 
+import api
 import addonHandler
 import config
 import textInfos
@@ -107,6 +108,8 @@ class GlobalPlugin(GlobalPlugin):
 		if self.isActivated: BrowseModeTreeInterceptor._quickNavScript = quickNavRapping
 
 	def script_toggleScreenRapping(self, gesture):
+		if not isinstance(api.getFocusObject().treeInterceptor, BrowseModeTreeInterceptor):
+			return
 		if self.isActivated:
 			BrowseModeTreeInterceptor._quickNavScript = oldQuickNav
 			config.conf['screenrapping']['isActive'] = False
