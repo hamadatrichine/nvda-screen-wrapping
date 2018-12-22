@@ -11,7 +11,7 @@ from inputCore import SCRCAT_BROWSEMODE
 from ui import message
 from tones import beep
 from speech import cancelSpeech, speak
-from scriptHandler import script, willSayAllResume
+from scriptHandler import willSayAllResume
 
 addonHandler.initTranslation()
 
