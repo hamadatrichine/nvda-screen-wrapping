@@ -56,7 +56,7 @@ def initNavItemsGenerator(self,itemType):
 		return self._iterNotLinkBlock
 	else:
 		return lambda direction,info: self._iterNodesByType(itemType,direction,info)
-	
+
 def screenRapping(self,itemType,readUnit,msg,rpTo,tone=(500,80),reverse='previous',direction='next'):
 	updatePosition(self,rpTo)
 	navItems = initNavItemsGenerator(self,itemType)
@@ -74,7 +74,7 @@ def screenRapping(self,itemType,readUnit,msg,rpTo,tone=(500,80),reverse='previou
 		return True
 	except StopIteration:
 		pass
-		
+
 def quickNavRapping(self,gesture, itemType, direction, errorMessage, readUnit):
 	iterFactory = initNavItemsGenerator(self,itemType)
 	try:
@@ -98,7 +98,7 @@ def quickNavRapping(self,gesture, itemType, direction, errorMessage, readUnit):
 	if not gesture or not willSayAllResume(gesture):
 		item.report(readUnit=readUnit)
 
-		
+
 class GlobalPlugin(GlobalPlugin):
 	def __init__(self):
 		super(GlobalPlugin, self).__init__()
