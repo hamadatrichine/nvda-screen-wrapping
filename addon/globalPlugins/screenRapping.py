@@ -45,7 +45,7 @@ def resetPosition(self, positionNumber,itemType):
 	itemText = '{}s'.format(itemType) if itemType[-1] != 'x' else '{}es'.format(itemType)
 	message(
 			# translators: Text spoken when the type of nav items does not exist in the page.
-			_('No {} in this page.'.format(itemText)))
+			_('No {} in this page.').format(itemText))
 
 def updatePosition(obj,position):
 	objPos = obj.makeTextInfo(position)
