@@ -25,11 +25,11 @@ addon_info = {
 	# Author(s)
 	"addon_author" : u"Hamada Trichine <hamadalog25@gmail.com>",
 	# URL for the add-on documentation support
-	"addon_url" : None,
+	"addon_url" : "https://github.com/hamadatrichine/nvda-screen-wrapping",
 	# Documentation file name
 	"addon_docFileName" : "readme.html",
 	"addon_nvdaMinimumVersion" : "2019.3",
-	"addon_lastTestedNvdaVersion" : "2019.3",
+	"addon_lastTestedNvdaVersion" : "2020.4",
 	"addon_updateChannel" : None,
 }
 
