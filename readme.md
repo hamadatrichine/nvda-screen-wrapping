@@ -26,4 +26,4 @@ Here is the list of all contributors:
 
 * Marlon Sousa (spelling, translations, port to NVDA 2019.3 compatibility)
 
-[1]: https://github.com/hamadatrichine/nvda-screen-rapping/releases/download/v1.4/screenRapping-1.4.nvda-addon
+[1]: https://github.com/hamadatrichine/nvda-screen-wrapping/releases/latest
