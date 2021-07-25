@@ -24,6 +24,6 @@ In the case of any bugs you can mention me on twitter [at HamadaTrichine](https:
 
 Here is the list of all contributors:
 
-* Marlon Sousa (spelling, translations, port to NVDA 2019.3 compatibility)
+* Marlon Sousa (spelling, translations, NVDA 2019.3 and 2021.1 compatibility)
 
 [1]: https://github.com/hamadatrichine/nvda-screen-wrapping/releases/latest
