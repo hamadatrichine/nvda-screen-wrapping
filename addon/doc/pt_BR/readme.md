@@ -26,4 +26,4 @@ Aqui está a a lista de todos os colaboradores:
 
 * Marlon Sousa (Correções ortográficas, traduções, compatibilidade com NVDA 2019.3 e 2021.1)
 
-[1]: http://hamadatr.servegame.com/nvdaAddons
+[1]: https://github.com/hamadatrichine/nvda-screen-wrapping/releases/latest
