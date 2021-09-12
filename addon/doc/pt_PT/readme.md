@@ -20,4 +20,10 @@ A utilização deste extra é simples, basta seguir os seguintes passos:
 
 No caso de encontrar um bug, pode mencionar no Twitter em [HamadaTrichine](https://twitter.com/hamadatrichine), ou ou enviar-me um [email.](mailto:hamadalog25@gmail.com)
 
+## Colaboradores
+
+Aqui está a a lista de todos os colaboradores:
+
+* Marlon Sousa (Correções ortográficas, traduções, compatibilidade com NVDA 2019.3 e 2021.1)
+
 [1]: http://hamadatr.servegame.com/nvdaAddons
