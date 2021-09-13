@@ -23,50 +23,46 @@ oldQuickNav = BrowseModeTreeInterceptor._quickNavScript
 
 # Text to translate
 # Translators: Text spoken when screen wrapping to top.
-msgrpTop = _("wrapping to top")
+msgwrpTop = _("wrapping to top")
 # Translators: Text spoken when screen wrapping to bottom.
-msgrpBottom = _("wrapping to bottom")
+msgwrpBottom = _("wrapping to bottom")
 
-def getCurrentPos(self):
-	currentPosStart = self.makeTextInfo(textInfos.POSITION_FIRST)
-	currentPosEnd = self.makeTextInfo(textInfos.POSITION_CARET)
-	currentPosStart.setEndPoint(currentPosEnd, "endToStart")
-	return len(currentPosStart.text)
+def getCurrentPos(treeInterceptor):
+	posDelta = treeInterceptor.makeTextInfo(textInfos.POSITION_FIRST)
+	posDelta.setEndPoint(treeInterceptor.makeTextInfo(textInfos.POSITION_CARET), "endToStart")
+	return len(posDelta.text)
 
-def resetPosition(self, positionNumber,itemType):
-	pos = self.makeTextInfo(textInfos.POSITION_FIRST)
-	pos.move(textInfos.UNIT_CHARACTER, positionNumber)
-	if hasattr(self, "selection"):
-		self.selection = pos
+def resetPosition(treeInterceptor, offset, errorMessage):
+	cursor = treeInterceptor.makeTextInfo(textInfos.POSITION_FIRST)
+	cursor.move(textInfos.UNIT_CHARACTER, offset)
+	if hasattr(treeInterceptor, "selection"):
+		treeInterceptor.selection = cursor
 	else:
-		pos.updateCaret()
+		cursor.updateCaret()
 	cancelSpeech()
-	pos.move(textInfos.UNIT_LINE,1,endPoint="end")
-	itemText = '{}s'.format(itemType) if itemType[-1] != 'x' else '{}es'.format(itemType)
-	message(
-			# translators: Text spoken when the type of nav items does not exist in the page.
-			_("No {} in this page").format(itemText))
+	cursor.move(textInfos.UNIT_LINE,1,endPoint="end")
+	message(errorMessage)
 
-def updatePosition(obj,position):
-	objPos = obj.makeTextInfo(position)
-	objPos.updateCaret()
+def updatePosition(treeInterceptor, position):
+	cursor = treeInterceptor.makeTextInfo(position)
+	cursor.updateCaret()
 	cancelSpeech()
 
-def initNavItemsGenerator(self,itemType):
+def initNavItemsGenerator(treeInterceptor, itemType):
 	if itemType=="notLinkBlock":
-		return self._iterNotLinkBlock
+		return treeInterceptor._iterNotLinkBlock
 	else:
-		return lambda direction,info: self._iterNodesByType(itemType,direction,info)
+		return lambda direction, info: treeInterceptor._iterNodesByType(itemType, direction, info)
 
-def screenWrapping(self,itemType,readUnit,msg,rpTo,tone=(500,80),reverse="previous", direction="next"):
-	updatePosition(self,rpTo)
-	navItems = initNavItemsGenerator(self,itemType)
+def screenWrapping(treeInterceptor, itemType, readUnit, msg, wrp2, tone=(500,80), reverse="previous", direction="next"):
+	updatePosition(treeInterceptor, wrp2)
+	navItems = initNavItemsGenerator(treeInterceptor, itemType)
 	try:
-		wrapping = next(navItems(direction,self.selection))
+		wrapping = next(navItems(direction, treeInterceptor.selection))
 		speak([msg])
 		wrapping.moveTo()
 		try:
-			wrapping = next(navItems(reverse,self.selection))
+			wrapping = next(navItems(reverse, treeInterceptor.selection))
 			callLater(300,wrapping.moveTo)
 		except StopIteration:
 			pass
@@ -76,23 +72,23 @@ def screenWrapping(self,itemType,readUnit,msg,rpTo,tone=(500,80),reverse="previo
 	except StopIteration:
 		pass
 
-def quickNavWrapping(self,gesture, itemType, direction, errorMessage, readUnit):
-	iterFactory = initNavItemsGenerator(self,itemType)
+def quickNavWrapping(treeInterceptor, gesture, itemType, direction, errorMessage, readUnit):
+	iterFactory = initNavItemsGenerator(treeInterceptor, itemType)
 	try:
-		item = next(iterFactory(direction, self.selection))
+		item = next(iterFactory(direction, treeInterceptor.selection))
 	except NotImplementedError:
 		# Translators: a message when a particular quick nav command is not supported in the current document.
 		message(_("Not supported in this document"))
 		return
 	except StopIteration:
 		if direction == "next":
-			lastPos = getCurrentPos(self)
-			if not screenWrapping(self,itemType,readUnit,msgrpTop,rpTo=textInfos.POSITION_FIRST):
-				resetPosition(self,lastPos,itemType)
+			lastPos = getCurrentPos(treeInterceptor)
+			if not screenWrapping(treeInterceptor, itemType, readUnit, msgwrpTop, wrp2=textInfos.POSITION_FIRST):
+				resetPosition(treeInterceptor, lastPos, errorMessage)
 		else:
-			lastPos = getCurrentPos(self)
-			if not screenWrapping(self,itemType,readUnit,msgrpBottom,rpTo=textInfos.POSITION_LAST,tone=(100,80),reverse="next", direction="previous"):
-				resetPosition(self,lastPos,itemType)
+			lastPos = getCurrentPos(treeInterceptor)
+			if not screenWrapping(treeInterceptor, itemType, readUnit, msgwrpBottom, wrp2=textInfos.POSITION_LAST, tone=(100,80), reverse="next", direction="previous"):
+				resetPosition(treeInterceptor, lastPos, errorMessage)
 		return
 
 	item.moveTo()
