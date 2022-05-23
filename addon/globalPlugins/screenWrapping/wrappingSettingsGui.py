@@ -1,7 +1,9 @@
 # screenWrapping
 # Copyright 2018 Hamada Trichine, released under GPLv2.
 
-import wx, gui, config, api
+import wx, gui, config, api, addonHandler
+
+addonHandler.initTranslation()
 
 class ScreenWrappingSettings(gui.SettingsPanel):
 	# Translators: The name of the addon.
