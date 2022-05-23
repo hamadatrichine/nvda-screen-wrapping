@@ -21,15 +21,15 @@ addon_info = {
 	When you press quick navigation keys such as h, b, f and others, you will be placed on the next element regardless of your current position on a webpage.
 	If elements are not found below your position, you will be placed at the first element of the requested type available from the beginning of the page and vice versa when you are searching upwards. this also extends to the find dialog of nvda."""),
 	# version
-	"addon_version" : "1.8",
+	"addon_version" : "1.9",
 	# Author(s)
 	"addon_author" : u"Hamada Trichine <hamadalog25@gmail.com>",
 	# URL for the add-on documentation support
 	"addon_url" : "https://github.com/hamadatrichine/nvda-screen-wrapping",
 	# Documentation file name
 	"addon_docFileName" : "readme.html",
-	"addon_nvdaMinimumVersion" : "2021.1",
-	"addon_lastTestedNvdaVersion" : "2021.1",
+	"addon_nvdaMinimumVersion" : "2020.1",
+	"addon_lastTestedNvdaVersion" : "2022.1",
 	"addon_updateChannel" : None,
 }
 
