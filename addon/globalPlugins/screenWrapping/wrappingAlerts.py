@@ -6,6 +6,8 @@ from speech import cancelSpeech
 from ui import message
 from tones import beep
 
+import addonHandler
+addonHandler.initTranslation()
 
 DIRECTION_NEXT = "next"
 DIRECTION_PREV = "previous"
@@ -28,11 +30,11 @@ def alertWrp(direction):
 def alertToggleFunctionality(state):
 	if state:
 		message(
-			# Translators: Text spoken when screen rapping is turned off.
+			# Translators: Text spoken when screen wrapping is turned off.
 			_("Screen wrapping off."))
 		playBeep(100,150)
 	else:
 		message(
-			# Translators: Text spoken when screen rapping is turned on.
+			# Translators: Text spoken when screen wrapping is turned on.
 			_("Screen wrapping on."))
 		playBeep(400,150)
