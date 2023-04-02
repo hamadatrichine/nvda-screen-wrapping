@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ScreenRapping\n"
 "Report-Msgid-Bugs-To: nvda-translations@groups.io\n"
-"POT-Creation-Date: 2020-06-02 09:13-0300\n"
-"PO-Revision-Date: 2020-06-02 09:14-0300\n"
+"POT-Creation-Date: 2023-04-01 23:00-0300\n"
+"PO-Revision-Date: 2023-04-01 23:15-0300\n"
 "Last-Translator: Ângelo Miguel Abrantes <ampa4374@gmail.com>\n"
 "Language-Team: Equipa Portuguesa do NVDA <ampa4374@gmail.com; rui."
 "fontes@tiflotecnia.com>\n"
@@ -11,65 +11,101 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.3.1\n"
-"X-Poedit-Basepath: ../../..\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 3.2.2\n"
+"X-Poedit-Basepath: ../../..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#. Text to translate
-#. Translators: Text spoken when screen wrapping to top.
-#: addon\globalPlugins\screenWrapping\__init__.py:26
-msgid "wrapping to top"
-msgstr "Voltando ao início"
-
-#. Translators: Text spoken when screen wrapping to bottom.
-#: addon\globalPlugins\screenWrapping\__init__.py:28
-msgid "wrapping to bottom"
-msgstr "Voltando ao fim"
-
-#. translators: Text spoken when the type of nav items does not exist in the page.
-#: addon\globalPlugins\screenWrapping\__init__.py:48
-#, fuzzy
-#| msgid "No {} in this page."
-msgid "No {} in this page"
-msgstr "Sem {} nesta página."
-
-#. Translators: a message when a particular quick nav command is not supported in the current document.
-#: addon\globalPlugins\screenWrapping\__init__.py:85
-msgid "Not supported in this document"
-msgstr "Não suportado neste documento"
-
 #. Translators: A discription for the toggleScreenWrapping script.
-#: addon\globalPlugins\screenWrapping\__init__.py:114
+#: addon\globalPlugins\screenWrapping\__init__.py:46
 #, fuzzy
 #| msgid "Activates and deactivates the screen rapping feature."
 msgid "Activates and deactivates the screen wrapping feature."
 msgstr "Activar ou desactivar o loop de ecrã"
 
-#. Translators: Text spoken when screen rapping is turned off.
-#: addon\globalPlugins\screenWrapping\__init__.py:125
+#. Translators: Text spoken when screen wrapping to bottom.
+#: addon\globalPlugins\screenWrapping\wrappingAlerts.py:23
+msgid "wrapping to bottom"
+msgstr "Voltando ao fim"
+
+#. Translators: Text spoken when screen wrapping to top.
+#: addon\globalPlugins\screenWrapping\wrappingAlerts.py:27
+msgid "wrapping to top"
+msgstr "Voltando ao início"
+
+#. Translators: Text spoken when screen wrapping is turned off.
+#: addon\globalPlugins\screenWrapping\wrappingAlerts.py:34
 #, fuzzy
 #| msgid "Screen rapping off."
 msgid "Screen wrapping off."
 msgstr "Loop de ecrã desactivado"
 
-#. Translators: Text spoken when screen rapping is turned on.
-#: addon\globalPlugins\screenWrapping\__init__.py:133
+#. Translators: Text spoken when screen wrapping is turned on.
+#: addon\globalPlugins\screenWrapping\wrappingAlerts.py:39
 #, fuzzy
 #| msgid "Screen rapping on."
 msgid "Screen wrapping on."
 msgstr "Loop de ecrã activado"
 
+#. Translators: the title of the find dialog
+#: addon\globalPlugins\screenWrapping\wrappingFind.py:21
+msgid "Find"
+msgstr "Buscar"
+
+#. Translators: a label for the edit text box where you type your search query
+#: addon\globalPlugins\screenWrapping\wrappingFind.py:28
+msgid "Type the text you wish to find"
+msgstr "Digite o texto a ser buscado"
+
+#: addon\globalPlugins\screenWrapping\wrappingFind.py:30
+msgid "Case &sensitive"
+msgstr "Diferenciar &maiúsculas e minúsculas"
+
+#. Translators: An option in the find dialog to allow wrapping on search.
+#: addon\globalPlugins\screenWrapping\wrappingFind.py:33
+msgid "&Wrap around"
+msgstr "&Busca circular"
+
+#: addon\globalPlugins\screenWrapping\wrappingFind.py:78
+#, python-format
+msgid "text \"%s\" not found"
+msgstr "Texto \"%s\" nào encontrado"
+
+#: addon\globalPlugins\screenWrapping\wrappingFind.py:78
+msgid "Find Error"
+msgstr "Erro de busca"
+
+#. Translators: a message when a particular quick nav command is not supported in the current document.
+#: addon\globalPlugins\screenWrapping\wrappingQuickNav.py:66
+msgid "Not supported in this document"
+msgstr "Não suportado neste documento"
+
+#. Translators: The name of the addon.
+#: addon\globalPlugins\screenWrapping\wrappingSettingsGui.py:10
+msgid "Screen Wrapping"
+msgstr "Loop de ecrã"
+
+#. Translators: Text for the check box in the settings that turns on or off the beeps when wrapping.
+#: addon\globalPlugins\screenWrapping\wrappingSettingsGui.py:15
+msgid "&Play a beep when wrapping"
+msgstr "&Tocar um beep ao navegar em loop"
+
+#. Translators: Text for the button in the settings that copys the donation E-mail to the clipboard.
+#: addon\globalPlugins\screenWrapping\wrappingSettingsGui.py:18
+msgid "&Copy PayPal donation E-mail to clipboard"
+msgstr "&Copiar e-mail de doação do Paypal para a área de transferência"
+
 #. Add-on summary, usually the user visible name of the addon.
-#. Translators: Summary for this add-on to be shown on installation and add-on information.
-#: buildVars.py:17
+#. Translators: Summary for this add-on
+#. to be shown on installation and add-on information found in Add-ons Manager.
+#: buildVars.py:23
 msgid "screen wrapping for nvda"
 msgstr "Loop de ecrã para NVDA"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
-#: buildVars.py:20
+#: buildVars.py:26
 #, fuzzy
 #| msgid ""
 #| "This addon brings the screen wrapping feature to nvda.\n"
@@ -86,7 +122,8 @@ msgid ""
 "webpage.\n"
 "\tIf elements are not found below your position, you will be placed at the "
 "first element of the requested type available from the beginning of the page "
-"and virseversa when you are searching upwards."
+"and vice versa when you are searching upwards. this also extends to the find "
+"dialog of nvda."
 msgstr ""
 "Este extra trás o loop de ecran para o NVDA.\n"
 "Quando pressiona as teclas de navegação rápida, tais como h, b, f ou outras, "
@@ -95,6 +132,11 @@ msgstr ""
 "Se o elemento sollicitado não for encontrado abaixo da posição actual, será "
 "posicionado no primeiro elemento do tipo solicitado no texto. O inverso "
 "acontece se estiver a procurar por elementos na ordem reversa."
+
+#, fuzzy
+#~| msgid "No {} in this page."
+#~ msgid "No {} in this page"
+#~ msgstr "Sem {} nesta página."
 
 #~ msgid "Screen curtain"
 #~ msgstr "Cortina de ecrã"
