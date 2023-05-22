@@ -9,6 +9,9 @@ from speech import cancelSpeech
 from tones import beep
 from . import wrappingAlerts
 
+import addonHandler
+addonHandler.initTranslation()
+
 
 def getCurrentPos(treeInterceptor):
 	posDelta = treeInterceptor.makeTextInfo(textInfos.POSITION_FIRST)

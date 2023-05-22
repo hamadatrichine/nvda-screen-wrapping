@@ -25,7 +25,7 @@ In the case of any bugs you can mention me on twitter [at HamadaTrichine](https:
 
 Here is the list of all contributors:
 
-* Marlon Sousa (spelling, translations, NVDA 2019.3 and 2021.1 compatibility)
+* Marlon Sousa (spelling, translations, NVDA 2019.3, 2021.1 and 2023.1 compatibility, bug fixes)
 
 * Valentin (Russian translation)
 

@@ -8,14 +8,17 @@ import controlTypes
 from core import callLater
 from cursorManager import CursorManager
 from gui import guiHelper, messageBox
+import addonHandler
+addonHandler.initTranslation()
 from gui.contextHelp import ContextHelpMixin
 from . import wrappingAlerts
+
 
 
 class CustomFindDialog(ContextHelpMixin, wx.Dialog, ):
 	helpId = "SearchingForText"
 	def __init__(self, parent, cursorManager, text, isCaseSensitive, reverse=False):
-			# Translators: the title of the find dialog
+		# Translators: the title of the find dialog
 		super().__init__(parent=parent, title=_("Find"))
 		self.currentCursorManager = cursorManager
 		self.reverse = reverse

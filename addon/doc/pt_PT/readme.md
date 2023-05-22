@@ -12,7 +12,8 @@ Se estivermos a usar as teclas de navegação rápida no sentido inverso, ou sej
 A utilização deste extra é simples, basta seguir os seguintes passos:
 
  1. Instale o extra;
- 2. Navegue pelas páginas Web, usando  as teclas de navegação rápida;
+ 2. Navegue pelas páginas Web, usando  as teclas de navegação rápida, ou tente realizar uma busca usando NVDA+CTRL+f (comando padrão);
+  nota: Em uma busca, a navegação em loop é dependente da caixa de verificação no diálogo de busca. Se a caixa de verificação busca circular estiver marcada, então a repetição de uma busca com NVDA+f3/NVDA+SHIFT+f3 vai ocorrer de forma circular. Se estiver desmarcada, o comportamento padrão será adotado.
  3. Pode activar ou desactivar  o loop de ecrã utilizando **nvda+h**.
   Nota: Pode alterar o comando predefinido no diálogo Definir comandos do NVDA na categoria Modo de navegação.
   
@@ -24,6 +25,6 @@ No caso de encontrar um bug, pode mencionar no Twitter em [HamadaTrichine](https
 
 Aqui está a a lista de todos os colaboradores:
 
-* Marlon Sousa (Correções ortográficas, traduções, compatibilidade com NVDA 2019.3 e 2021.1)
+* Marlon Sousa (Correções ortográficas, traduções, compatibilidade com NVDA 2019.3, 2021.1 e 2023.1, correções de bugs)
 
 [1]: https://github.com/hamadatrichine/nvda-screen-wrapping/releases/latest
