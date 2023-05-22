@@ -5,6 +5,7 @@ import addonHandler
 import config
 import gui
 import cursorManager
+import globalVars
 from globalPluginHandler import GlobalPlugin
 from browseMode import BrowseModeTreeInterceptor
 from inputCore import SCRCAT_BROWSEMODE
@@ -17,7 +18,11 @@ addonHandler.initTranslation()
 confspec = {"isActive":"boolean(default=True)", "turnOnBeeps":"boolean(default=True)"}
 config.conf.spec["screenWrapping"] = confspec
 
+def defaultPluginOnSecure(cls):
+	return GlobalPlugin if globalVars.appArgs.secure else cls
 
+
+@defaultPluginOnSecure
 class GlobalPlugin(GlobalPlugin):
 	def __init__(self):
 		super(GlobalPlugin, self).__init__()
