@@ -5,7 +5,7 @@ import wx, gui, config, api, addonHandler
 
 addonHandler.initTranslation()
 
-class ScreenWrappingSettings(gui.SettingsPanel):
+class ScreenWrappingSettings(gui.settingsDialogs.SettingsPanel):
 	# Translators: The name of the addon.
 	title = _("Screen Wrapping")
 
