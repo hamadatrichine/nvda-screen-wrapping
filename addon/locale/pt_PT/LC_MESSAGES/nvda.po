@@ -3,60 +3,54 @@ msgstr ""
 "Project-Id-Version: ScreenRapping\n"
 "Report-Msgid-Bugs-To: nvda-translations@groups.io\n"
 "POT-Creation-Date: 2023-04-01 23:00-0300\n"
-"PO-Revision-Date: 2023-04-01 23:15-0300\n"
+"PO-Revision-Date: 2024-04-15 12:50+0100\n"
 "Last-Translator: Ângelo Miguel Abrantes <ampa4374@gmail.com>\n"
 "Language-Team: Equipa Portuguesa do NVDA <ampa4374@gmail.com; rui."
 "fontes@tiflotecnia.com>\n"
-"Language: pt\n"
+"Language: pt_PT\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Poedit 3.2.2\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.4.2\n"
 "X-Poedit-Basepath: ../../..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-SearchPath-0: .\n"
 
 #. Translators: A discription for the toggleScreenWrapping script.
 #: addon\globalPlugins\screenWrapping\__init__.py:46
-#, fuzzy
-#| msgid "Activates and deactivates the screen rapping feature."
 msgid "Activates and deactivates the screen wrapping feature."
-msgstr "Activar ou desactivar o loop de ecrã"
+msgstr "Activar ou desactivar o loop de ecrã."
 
 #. Translators: Text spoken when screen wrapping to bottom.
 #: addon\globalPlugins\screenWrapping\wrappingAlerts.py:23
 msgid "wrapping to bottom"
-msgstr "Voltando ao fim"
+msgstr "voltando ao fim"
 
 #. Translators: Text spoken when screen wrapping to top.
 #: addon\globalPlugins\screenWrapping\wrappingAlerts.py:27
 msgid "wrapping to top"
-msgstr "Voltando ao início"
+msgstr "voltando ao início"
 
 #. Translators: Text spoken when screen wrapping is turned off.
 #: addon\globalPlugins\screenWrapping\wrappingAlerts.py:34
-#, fuzzy
-#| msgid "Screen rapping off."
 msgid "Screen wrapping off."
-msgstr "Loop de ecrã desactivado"
+msgstr "Loop de ecrã desactivado."
 
 #. Translators: Text spoken when screen wrapping is turned on.
 #: addon\globalPlugins\screenWrapping\wrappingAlerts.py:39
-#, fuzzy
-#| msgid "Screen rapping on."
 msgid "Screen wrapping on."
-msgstr "Loop de ecrã activado"
+msgstr "Loop de ecrã activado."
 
 #. Translators: the title of the find dialog
 #: addon\globalPlugins\screenWrapping\wrappingFind.py:21
 msgid "Find"
-msgstr "Buscar"
+msgstr "Localizar"
 
 #. Translators: a label for the edit text box where you type your search query
 #: addon\globalPlugins\screenWrapping\wrappingFind.py:28
 msgid "Type the text you wish to find"
-msgstr "Digite o texto a ser buscado"
+msgstr "Introduza o texto a localizar"
 
 #: addon\globalPlugins\screenWrapping\wrappingFind.py:30
 msgid "Case &sensitive"
@@ -65,16 +59,16 @@ msgstr "Diferenciar &maiúsculas e minúsculas"
 #. Translators: An option in the find dialog to allow wrapping on search.
 #: addon\globalPlugins\screenWrapping\wrappingFind.py:33
 msgid "&Wrap around"
-msgstr "&Busca circular"
+msgstr "&Localizar em loop"
 
 #: addon\globalPlugins\screenWrapping\wrappingFind.py:78
 #, python-format
 msgid "text \"%s\" not found"
-msgstr "Texto \"%s\" nào encontrado"
+msgstr "texto \"%s\" não encontrado"
 
 #: addon\globalPlugins\screenWrapping\wrappingFind.py:78
 msgid "Find Error"
-msgstr "Erro de busca"
+msgstr "Erro de localização"
 
 #. Translators: a message when a particular quick nav command is not supported in the current document.
 #: addon\globalPlugins\screenWrapping\wrappingQuickNav.py:66
@@ -101,20 +95,11 @@ msgstr "&Copiar e-mail de doação do Paypal para a área de transferência"
 #. to be shown on installation and add-on information found in Add-ons Manager.
 #: buildVars.py:23
 msgid "screen wrapping for nvda"
-msgstr "Loop de ecrã para NVDA"
+msgstr "loop de ecrã para NVDA"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 #: buildVars.py:26
-#, fuzzy
-#| msgid ""
-#| "This addon brings the screen wrapping feature to nvda.\n"
-#| "\tWhen you press quick navigation keys such as h, b, f and others, you "
-#| "will be placed on the next element regardless of your current position on "
-#| "a webpage.\n"
-#| "\tIf elements are not found below your position, you will be placed at "
-#| "the first element of the requested type available from the beginning of "
-#| "tghe page and virseversa when you are searching upwards."
 msgid ""
 "This addon brings the screen wrapping feature to nvda.\n"
 "\tWhen you press quick navigation keys such as h, b, f and others, you will "
@@ -137,359 +122,3 @@ msgstr ""
 #~| msgid "No {} in this page."
 #~ msgid "No {} in this page"
 #~ msgstr "Sem {} nesta página."
-
-#~ msgid "Screen curtain"
-#~ msgstr "Cortina de ecrã"
-
-#~ msgid "Toggles screen curtain on or off"
-#~ msgstr "Activar ou desactivar a cortina de ecrã"
-
-#~ msgid "Use &screen curtain"
-#~ msgstr "Utilizar &cortina de ecrã"
-
-#~ msgid ""
-#~ "You are using an older version of Windows. This add-on requires Windows 8 "
-#~ "or later."
-#~ msgstr ""
-#~ "Está a usar uma versão antiga do Windows. Este extra necessita do Windows "
-#~ "8 ou superior."
-
-#~ msgid "Incompatible Windows version"
-#~ msgstr "Versão incompatível do Windows"
-
-#~ msgid ""
-#~ "The date and time format you were using are not compatible with this "
-#~ "version of the Clock add-on, this will be fixed during installation. "
-#~ "Click OK to confirm these corrections"
-#~ msgstr ""
-#~ "Os formatos de data e hora que estava a usar não são compatíveis com esta "
-#~ "versão do extra e serão corrigidos durante a instalação.\n"
-#~ "Pressione OK para confirmar a correcção"
-
-#~ msgid "Time and date format corrections"
-#~ msgstr "Correcção do formato de data e hora"
-
-#~ msgid "{hours} hours, "
-#~ msgstr "{hours} horas, "
-
-#~ msgid "{minutes} minutes, "
-#~ msgstr "{minutes} minutos, "
-
-#~ msgid "{seconds} seconds"
-#~ msgstr "{seconds} segundos"
-
-#~ msgid "0 seconds"
-#~ msgstr "0 segundos"
-
-#~ msgid "Clock"
-#~ msgstr "Relógio"
-
-#~ msgid "Clock se&ttings..."
-#~ msgstr "Configurações do &Relógio..."
-
-#~ msgid "Clock and calendar setup"
-#~ msgstr "Configuração do relógio e do calendário"
-
-#~ msgid "Clock setup"
-#~ msgstr "Configurações do relógio:"
-
-#~ msgid "Clock setup for times and dates"
-#~ msgstr "Configuração do relógio para a data e hora"
-
-#~ msgid "Alarm settin&gs"
-#~ msgstr "Configurações do &alarme"
-
-#~ msgid "Allows you to schedule an alarm"
-#~ msgstr "Permite configurar um alarme"
-
-#~ msgid "Day {day}, week {week} of {year}, remaining days {remain}."
-#~ msgstr ""
-#~ "Dia {day}, semana {week} de {year} e faltam {remain} dias para o fim do "
-#~ "ano."
-
-#~ msgid ""
-#~ "Speaks current time. If pressed twice quickly, speaks current date. If "
-#~ "pressed thrice quickly, reports the current day, the week number, the "
-#~ "current year and the days remaining before the end of the year."
-#~ msgstr ""
-#~ "Diz a hora actual. Se pressionado duas vezes rapidamente, informa a data "
-#~ "actual. Se pressionado três vezes rapidamente, informa o dia actual, o "
-#~ "número da semana do ano e quantos dias faltam para o fim do ano."
-
-#~ msgid ""
-#~ "Clock and calendar layer commands. After pressing this keystroke, press H "
-#~ "for additional help."
-#~ msgstr ""
-#~ "Comandos da camada de relógio e calendário. Depois de pressionar esta "
-#~ "tecla de atalho, pressione H para ajuda adicional."
-
-#~ msgid "Reset. Running."
-#~ msgstr "Reiniciar. A executar."
-
-#~ msgid "Running."
-#~ msgstr "A executar..."
-
-#~ msgid "{0} stopped."
-#~ msgstr "{0} parado."
-
-#~ msgid "Starts, resets or stops the stopwatch."
-#~ msgstr "Inicia, pára ou reestablece o cronómetro."
-
-#~ msgid "Speaks current stopwatch or count-down timer."
-#~ msgstr ""
-#~ "informa sobre o cronómetro actual ou fornece a contagem regressiva do "
-#~ "cronómetro."
-
-#~ msgid "Elapsed time {elapsed}, remaining time {remaining}."
-#~ msgstr "Tempo decorrido {elapsed}, tempo restante {remaining}."
-
-#~ msgid "No alarm"
-#~ msgstr "Sem alarme"
-
-#~ msgid "Gives the remaining and elapsed time before the next alarm."
-#~ msgstr "Anuncia o tempo decorrido e restante antes do próximo alarme"
-
-#~ msgid "Alarm cancelled"
-#~ msgstr "Alarme cancelado"
-
-#~ msgid "Cancel the next alarm."
-#~ msgstr "Cancelar o próximo alarme"
-
-#~ msgid ""
-#~ "The stopwatch is already reset to 0. Use the clock layer command followed "
-#~ "by s to start it."
-#~ msgstr ""
-#~ "O cronómetro já está redefinido para 0. Use o comando da camada de "
-#~ "relógio seguido por s para o iniciar."
-
-#~ msgid "Stopwatch reset."
-#~ msgstr "Cronómetro reiniciado."
-
-#~ msgid "Resets stopwatch to 0 without restarting it."
-#~ msgstr "Redefine o cronómetro para 0, sem o iniciar."
-
-#~ msgid ""
-#~ "\n"
-#~ "\t\tS: Starts, resets or stops the stopwatch.\n"
-#~ "\t\tR: Resets stopwatch to 0 without restarting it.\n"
-#~ "\t\tA: Gives the remaining and elapsed time before the next alarm.\n"
-#~ "\t\tC: Cancel the next alarm.\n"
-#~ "\t\tSpacebar: Speaks current stopwatch or count-down timer.\n"
-#~ "\t\tH: List all layered commands (Help).\n"
-#~ "\t\t"
-#~ msgstr ""
-#~ "\n"
-#~ "S: Inicia, pára ou reinicia o cronómetro.\n"
-#~ "R: Redefine o cronómetro sem começar de novo.\n"
-#~ "Barra de espaço: fala o cronómetro actual ou o cronómetro de contagem "
-#~ "regressiva.\n"
-#~ "\t\tH: Lista todos os comandos em camada (Help).\n"
-#~ "\t\t"
-
-#~ msgid "Lists available commands in clock command layer."
-#~ msgstr "Lista os comandos disponíveis na camada de comando do relógio."
-
-#~ msgid "Allows to check the next alarm. If pressed twice, cancels it."
-#~ msgstr "Verifica o próximo alarme, duas vezes cancela-o"
-
-#~ msgid "Display the clock settings dialog box."
-#~ msgstr "Mostra o diálogo de configurações do relógio."
-
-#~ msgid "Display the alarm settings dialog box."
-#~ msgstr "Mostra o diálogo de configurações do alarme."
-
-#~ msgid "&Time display format:"
-#~ msgstr "Formato de visualização da &hora:"
-
-#~ msgid "&Date display format:"
-#~ msgstr "Formato de visualização da &data:"
-
-#~ msgid "Input in &24-hour format"
-#~ msgstr "Entrada no formato de 24 horas"
-
-#~ msgid "off"
-#~ msgstr "desactivado"
-
-#~ msgid "every 10 minutes"
-#~ msgstr "cada 10 minutos"
-
-#~ msgid "every 15 minutes"
-#~ msgstr "cada 15 minutos"
-
-#~ msgid "every 30 minutes"
-#~ msgstr "cada 30 minutos"
-
-#~ msgid "every hour"
-#~ msgstr "cada hora"
-
-#~ msgid "&interval:"
-#~ msgstr "&Intervalo"
-
-#~ msgid "speech and sound"
-#~ msgstr "voz e som"
-
-#~ msgid "speech only"
-#~ msgstr "Apenas voz"
-
-#~ msgid "sound only"
-#~ msgstr "Apenas som"
-
-#~ msgid "Time &announcement:"
-#~ msgstr "&Anúncio da hora:"
-
-#~ msgid "Clock chime &sound:"
-#~ msgstr "&Som da campainha do relógio"
-
-#~ msgid "&Quiet hours"
-#~ msgstr "&Horas silenciosas"
-
-#~ msgid "Quiet hours start time:"
-#~ msgstr "Início das horas silenciosas:"
-
-#~ msgid "Quiet hours end time:"
-#~ msgstr "Fim das horas silenciosas:"
-
-#~ msgid "Alarm setup"
-#~ msgstr "Configuração do alarme:"
-
-#~ msgid "Hours"
-#~ msgstr "Horas"
-
-#~ msgid "Minutes"
-#~ msgstr "Minutos, "
-
-#~ msgid "Seconds"
-#~ msgstr "Segundos"
-
-#~ msgid "Choose the type of timer inputs before the alarm rings:"
-#~ msgstr "Escolha o tipo de entrada antes alarm do alarme tocar"
-
-#~ msgid "A&larm sound:"
-#~ msgstr "&Som do alarme"
-
-#~ msgid "Alarm time waiting:"
-#~ msgstr "Tempo de espera do alarme"
-
-#~ msgid "You've chosen an alarm to be triggered in {tm} {unit}"
-#~ msgstr "Configurou um alarme para ser activado em {tm} {unit}"
-
-#~ msgid "Confirmation"
-#~ msgstr "Confirmação"
-
-#~ msgid "It's {hours} o'clock and {minutes} minutes"
-#~ msgstr "São {hours} horas e {minutes} minutos"
-
-#~ msgid "It's {hours} o'clock, {minutes} minutes and {seconds} seconds"
-#~ msgstr "São {hours} horas, {minutes} minutos e {seconds} segundos"
-
-#~ msgid "{hours} o'clock, {minutes} minutes"
-#~ msgstr "{hours} horas, {minutes} minutos"
-
-#~ msgid "{hours} o'clock, {minutes} minutes, {seconds} seconds"
-#~ msgstr "{hours} horas, {minutes} minutos e {seconds} segundos"
-
-#~ msgid "It's {minutes} past {hours}"
-#~ msgstr "São {minutes} depois das  {hours}"
-
-#~ msgid "{hours} h {minutes} min"
-#~ msgstr "{hours} h {minutes} min"
-
-#~ msgid "{hours} h, {minutes} min, {seconds} sec"
-#~ msgstr "{hours} h, {minutes} min, {seconds} sec"
-
-#~ msgid "It's {hours}:{minutes}"
-#~ msgstr "São {hours}:{minutes}"
-
-#~ msgid "It's {hours}:{minutes}:{seconds}"
-#~ msgstr "São {hours}:{minutes}:{seconds}"
-
-#, fuzzy
-#~ msgid ""
-#~ "An advanced clock and calendar for NVDA.\n"
-#~ "NVDA+F12, get current time.\n"
-#~ "NVDA+F12 pressed twice quickly, get current date.\n"
-#~ "NVDA+F12 pressed thrice quickly, reports the current day, the week "
-#~ "number, the current year and the remaining days before the end of the "
-#~ "year.\n"
-#~ "For other instructions, press Add-on help button in add-ons manager."
-#~ msgstr ""
-#~ "Um relógio e um calendário avançados para o NVDA.\n"
-#~ "Pressione NVDA + F12 para a hora actual, pressione-o duas vezes para a "
-#~ "data actual ou pressione-o três vezes para obter o dia e a semana do ano "
-#~ "actual.\n"
-#~ "Para outras instruções, pressione o botão de ajuda do extra no gestor de "
-#~ "extras\"."
-
-#~ msgid "Auto announce &interval:"
-#~ msgstr "Intervalo do anúncio automático:"
-
-#~ msgid "%d hour, "
-#~ msgstr "%d hora, "
-
-#~ msgid "%d minute, "
-#~ msgstr "%d minuto, "
-
-#~ msgid "%s second"
-#~ msgstr "%s segundo"
-
-#~ msgid "It's mm past H"
-#~ msgstr "São H e mm"
-
-#~ msgid "hh mm min"
-#~ msgstr "hh mm min"
-
-#~ msgid "hh mm min ss sec"
-#~ msgstr "hh h, mm min, ss seg"
-
-#~ msgid "It's H:mm"
-#~ msgstr "São H:mm"
-
-#~ msgid "It's HH:mm:ss"
-#~ msgstr "são HH:mm:ss"
-
-#~ msgid "%H h, %M min"
-#~ msgstr "%H h, %M min"
-
-#~ msgid "%H:%M:%S"
-#~ msgstr "%H:%M:%S"
-
-#~ msgid "%H:%M"
-#~ msgstr "%H:%M"
-
-#~ msgid "It's %I:%M %p"
-#~ msgstr "São %I:%M %p"
-
-#~ msgid "It's %I:%M:%S %p"
-#~ msgstr "São %I:%M:%S %p"
-
-#~ msgid "%I:%M %p"
-#~ msgstr "%I:%M %p"
-
-#~ msgid "%I:%M:%S %p"
-#~ msgstr "%I:%M:%S %p"
-
-#~ msgid "%A, %B %d, %Y"
-#~ msgstr "%A, %B %d, %Y"
-
-#~ msgid "%Y-%d-%m"
-#~ msgstr "%Y-%d-%m"
-
-#, fuzzy
-#~| msgid "%d-%m-%Y"
-#~ msgid "%Y-%m-%d"
-#~ msgstr "%d-%m-%Y"
-
-#~ msgid "%d-%m-%Y"
-#~ msgstr "%d-%m-%Y"
-
-#~ msgid "%m-%d-%Y"
-#~ msgstr "%m-%d-%Y"
-
-#~ msgid "%m/%d/%Y"
-#~ msgstr "%m/%d/%Y"
-
-#~ msgid "%d/%m/%Y"
-#~ msgstr "%d/%m/%Y"
-
-#~ msgid "Day %j, week %W of %Y."
-#~ msgstr "Dia %j, semana %W de %Y."
