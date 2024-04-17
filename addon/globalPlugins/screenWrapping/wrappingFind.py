@@ -9,26 +9,25 @@ from core import callLater
 from cursorManager import CursorManager
 from gui import guiHelper, messageBox
 import addonHandler
-addonHandler.initTranslation()
 from gui.contextHelp import ContextHelpMixin
 from . import wrappingAlerts
 
+defaultTranslator = _
+addonHandler.initTranslation()
 
 
 class CustomFindDialog(ContextHelpMixin, wx.Dialog, ):
 	helpId = "SearchingForText"
 	def __init__(self, parent, cursorManager, text, isCaseSensitive, reverse=False):
-		# Translators: the title of the find dialog
-		super().__init__(parent=parent, title=_("Find"))
+		super().__init__(parent=parent, title=defaultTranslator("Find"))
 		self.currentCursorManager = cursorManager
 		self.reverse = reverse
 
 		dialogSizer = wx.BoxSizer(wx.VERTICAL)
 		helperSizer = guiHelper.BoxSizerHelper(self, orientation=wx.VERTICAL)
-		# Translators: a label for the edit text box where you type your search query
-		editTextLabel = _("Type the text you wish to find")
+		editTextLabel = defaultTranslator("Type the text you wish to find")
 		self.findTextField = helperSizer.addLabeledControl(editTextLabel, wx.TextCtrl, value=text)
-		self.caseSensitiveCheckBox = wx.CheckBox(self, wx.ID_ANY, label=_("Case &sensitive"))
+		self.caseSensitiveCheckBox = wx.CheckBox(self, wx.ID_ANY, label=defaultTranslator("Case &sensitive"))
 		self.caseSensitiveCheckBox.SetValue(isCaseSensitive)
 		# Translators: An option in the find dialog to allow wrapping on search.
 		self.wrapAroundCheckBox = wx.CheckBox(self, wx.ID_ANY, label=_("&Wrap around"))
@@ -76,7 +75,7 @@ def customDoFindText(cursorManagerInst, text, reverse=False, caseSensitive=False
 		textInfoRange=cursorManagerInst.makeTextInfo(textInfos.POSITION_LAST if reverse else textInfos.POSITION_FIRST)
 		result = textInfoRange.find(text,reverse=reverse,caseSensitive=caseSensitive)
 		if not cursorManagerInst._wrapFind or not result:
-			wx.CallAfter(messageBox, _('text "%s" not found') % text, _("Find Error"), wx.OK|wx.ICON_ERROR)
+			wx.CallAfter(messageBox, defaultTranslator('text "%s" not found') % text, defaultTranslator("0 matches"), wx.OK|wx.ICON_ERROR)
 		else:
 			wrappingAlerts.alertWrp(wrappingAlerts.DIRECTION_NEXT if not reverse else wrappingAlerts.DIRECTION_PREV)
 			speakFindResult(cursorManagerInst, textInfoRange, result, willSayAllResume)

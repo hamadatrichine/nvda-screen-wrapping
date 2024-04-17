@@ -9,8 +9,6 @@ from speech import cancelSpeech
 from tones import beep
 from . import wrappingAlerts
 
-import addonHandler
-addonHandler.initTranslation()
 
 
 def getCurrentPos(treeInterceptor):
@@ -62,7 +60,6 @@ def quickNavWrapping(treeInterceptor, gesture, itemType, direction, errorMessage
 	try:
 		item = next(iterFactory(direction, treeInterceptor.selection))
 	except NotImplementedError:
-		# Translators: a message when a particular quick nav command is not supported in the current document.
 		message(_("Not supported in this document"))
 		return
 	except StopIteration:
