@@ -9,7 +9,7 @@ from speech import cancelSpeech
 from tones import beep
 from . import wrappingAlerts
 
-
+defaultTranslator = _
 
 def getCurrentPos(treeInterceptor):
 	posDelta = treeInterceptor.makeTextInfo(textInfos.POSITION_FIRST)
@@ -60,7 +60,7 @@ def quickNavWrapping(treeInterceptor, gesture, itemType, direction, errorMessage
 	try:
 		item = next(iterFactory(direction, treeInterceptor.selection))
 	except NotImplementedError:
-		message(_("Not supported in this document"))
+		message(defaultTranslator("Not supported in this document"))
 		return
 	except StopIteration:
 		if direction == "next":
