@@ -24,14 +24,6 @@ msgstr "Перемещение вверх"
 msgid "wrapping to bottom"
 msgstr "Перемещение вниз"
 
-#: screenWrapping/__init__.py:48
-msgid "No {} in this page"
-msgstr "Нет {} на странице"
-
-#: screenWrapping/__init__.py:85
-msgid "Not supported in this document"
-msgstr "Не поддерживается в этом документе"
-
 #: screenWrapping/__init__.py:114
 msgid "Activates and deactivates the screen wrapping feature."
 msgstr "Активировать и деактивировать функцию перемещения по экрану."
