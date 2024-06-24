@@ -1,7 +1,8 @@
 # screenWrapping
 # Copyright 2018 Hamada Trichine, released under GPLv2.
 
-import textInfos
+import textInfos, config, re
+from documentBase import _Movement
 from core import callLater
 from ui import message
 from scriptHandler import willSayAllResume
@@ -34,9 +35,44 @@ def updatePosition(treeInterceptor, position):
 
 def initNavItemsGenerator(treeInterceptor, itemType):
 	if itemType=="notLinkBlock":
-		return treeInterceptor._iterNotLinkBlock
+		iterFactory=treeInterceptor._iterNotLinkBlock
+	elif itemType == "textParagraph":
+		punctuationMarksRegex = re.compile(
+			config.conf["virtualBuffers"]["textParagraphRegex"],
+		)
+
+		def paragraphFunc(info):
+			return punctuationMarksRegex.search(info.text) is not None
+
+		def iterFactory(direction, pos):
+			return treeInterceptor._iterSimilarParagraph(
+				kind="textParagraph",
+				paragraphFunction=paragraphFunc,
+				desiredValue=True,
+				direction=_Movement(direction),
+				pos=pos,
+			)
+	elif itemType == "verticalParagraph":
+		def paragraphFunc(info):
+			try:
+				return info.location[0]
+			except (AttributeError, TypeError):
+				return None
+
+		def iterFactory(direction, pos):
+			return treeInterceptor._iterSimilarParagraph(
+				kind="verticalParagraph",
+				paragraphFunction=paragraphFunc,
+				desiredValue=None,
+				direction=_Movement(direction),
+				pos=pos,
+			)
+	elif itemType in ["sameStyle", "differentStyle"]:
+		def iterFactory(direction, info):
+			return treeInterceptor._iterTextStyle(itemType, direction, info)
 	else:
-		return lambda direction, info: treeInterceptor._iterNodesByType(itemType, direction, info)
+		iterFactory=lambda direction,info: treeInterceptor._iterNodesByType(itemType,direction,info)
+	return iterFactory
 
 def screenWrapping(treeInterceptor, itemType, readUnit, wrp2, reverse="previous", direction="next"):
 	updatePosition(treeInterceptor, wrp2)
