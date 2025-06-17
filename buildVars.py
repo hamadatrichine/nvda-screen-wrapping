@@ -10,38 +10,38 @@
 # To avoid initializing translations in this module we simply roll our own "fake" `_` function
 # which returns whatever is given to it as an argument.
 def _(arg):
-	return arg
+    return arg
 
 
 # Add-on information variables
 addon_info = {
-	# add-on Name/identifier, internal for NVDA
-	"addon_name": "screenWrapping",
-	# Add-on summary, usually the user visible name of the addon.
-	# Translators: Summary for this add-on
-	# to be shown on installation and add-on information found in Add-ons Manager.
-	"addon_summary": _("screen wrapping for nvda"),
-	# Add-on description
-	# Translators: Long description to be shown for this add-on on add-on information from add-ons manager
-	"addon_description": _("""This addon brings the screen wrapping feature to nvda.
+    # add-on Name/identifier, internal for NVDA
+    "addon_name": "screenWrapping",
+    # Add-on summary, usually the user visible name of the addon.
+    # Translators: Summary for this add-on
+    # to be shown on installation and add-on information found in Add-ons Manager.
+    "addon_summary": _("screen wrapping for nvda"),
+    # Add-on description
+    # Translators: Long description to be shown for this add-on on add-on information from add-ons manager
+    "addon_description": _("""This addon brings the screen wrapping feature to nvda.
 	When you press quick navigation keys such as h, b, f and others, you will be placed on the next element regardless of your current position on a webpage.
 	If elements are not found below your position, you will be placed at the first element of the requested type available from the beginning of the page and vice versa when you are searching upwards. this also extends to the find dialog of nvda."""),
-	# version
-	"addon_version": "2.2.0",
-	# Author(s)
-	"addon_author": "Hamada Trichine <hamadalog25@gmail.com>",
-	# URL for the add-on documentation support
-	"addon_url": "https://github.com/hamadatrichine/nvda-screen-wrapping",
-	# Documentation file name
-	"addon_docFileName": "readme.html",
-	# Minimum NVDA version supported (e.g. "2018.3.0", minor version is optional)
-	"addon_minimumNVDAVersion": "2024.2",
-	# Last NVDA version supported/tested (e.g. "2018.4.0", ideally more recent than minimum version)
-	"addon_lastTestedNVDAVersion": "2024.2",
-	# Add-on update channel (default is None, denoting stable releases,
-	# and for development releases, use "dev".)
-	# Do not change unless you know what you are doing!
-	"addon_updateChannel": None,
+    # version
+    "addon_version": "2.3.0",
+    # Author(s)
+    "addon_author": "Hamada Trichine <hamadalog25@gmail.com>",
+    # URL for the add-on documentation support
+    "addon_url": "https://github.com/hamadatrichine/nvda-screen-wrapping",
+    # Documentation file name
+    "addon_docFileName": "readme.html",
+    # Minimum NVDA version supported (e.g. "2018.3.0", minor version is optional)
+    "addon_minimumNVDAVersion": "2024.2",
+    # Last NVDA version supported/tested (e.g. "2018.4.0", ideally more recent than minimum version)
+    "addon_lastTestedNVDAVersion": "2025.1",
+    # Add-on update channel (default is None, denoting stable releases,
+    # and for development releases, use "dev".)
+    # Do not change unless you know what you are doing!
+    "addon_updateChannel": None,
 }
 
 # Define the python files that are the sources of your add-on.
