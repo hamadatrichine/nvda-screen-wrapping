@@ -50,7 +50,6 @@ class GlobalPlugin(GlobalPlugin):
 		# Translators: A discription for the toggleScreenWrapping script.
 		description=_("Activates and deactivates the screen wrapping feature."),
 		category = SCRCAT_BROWSEMODE,
-		gesture = "KB:NVDA+H"
 	)
 	def script_toggleScreenWrapping(self, gesture):
 		if self.isActivated:
