@@ -1,0 +1,92 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: ScreenRapping\n"
+"Report-Msgid-Bugs-To: nvda-translations@groups.io\n"
+"POT-Creation-Date: 2023-04-01 23:00-0300\n"
+"PO-Revision-Date: 2025-10-23 11:12+0200\n"
+"Last-Translator: Ângelo Miguel Abrantes <ampa4374@gmail.com>\n"
+"Language-Team: \"NVDA Nachhaltig\" - BFW Würzburg\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.8\n"
+"X-Poedit-Basepath: ../../..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#. Translators: A discription for the toggleScreenWrapping script.
+#: addon\globalPlugins\screenWrapping\__init__.py:46
+msgid "Activates and deactivates the screen wrapping feature."
+msgstr "Aktiviert und deaktiviert die Navigationsschleife-Funktion."
+
+#. Translators: Text spoken when screen wrapping to bottom.
+#: addon\globalPlugins\screenWrapping\wrappingAlerts.py:23
+msgid "wrapping to bottom"
+msgstr "nach unten"
+
+#. Translators: Text spoken when screen wrapping to top.
+#: addon\globalPlugins\screenWrapping\wrappingAlerts.py:27
+msgid "wrapping to top"
+msgstr "Nach oben"
+
+#. Translators: Text spoken when screen wrapping is turned off.
+#: addon\globalPlugins\screenWrapping\wrappingAlerts.py:34
+msgid "Screen wrapping off."
+msgstr "Navigationsschleife aus."
+
+#. Translators: Text spoken when screen wrapping is turned on.
+#: addon\globalPlugins\screenWrapping\wrappingAlerts.py:39
+msgid "Screen wrapping on."
+msgstr "Navigationsschleife ein."
+
+#. Translators: An option in the find dialog to allow wrapping on search.
+#: addon\globalPlugins\screenWrapping\wrappingFind.py:33
+msgid "&Wrap around"
+msgstr "&Navigationsschleife verwenden"
+
+#. Translators: The name of the addon.
+#: addon\globalPlugins\screenWrapping\wrappingSettingsGui.py:10
+msgid "Screen Wrapping"
+msgstr "Navigationsschleife"
+
+#. Translators: Text for the check box in the settings that turns on or off the beeps when wrapping.
+#: addon\globalPlugins\screenWrapping\wrappingSettingsGui.py:15
+msgid "&Play a beep when wrapping"
+msgstr "&Ton beim Springen"
+
+#. Translators: Text for the button in the settings that copys the donation E-mail to the clipboard.
+#: addon\globalPlugins\screenWrapping\wrappingSettingsGui.py:18
+msgid "&Copy PayPal donation E-mail to clipboard"
+msgstr "&PayPal-E-Mail zum Spenden in die Zwischenablage kopieren"
+
+#. Add-on summary, usually the user visible name of the addon.
+#. Translators: Summary for this add-on
+#. to be shown on installation and add-on information found in Add-ons Manager.
+#: buildVars.py:23
+msgid "screen wrapping for nvda"
+msgstr "Navigationsschleife für den Lesemodus"
+
+#. Add-on description
+#. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
+#: buildVars.py:26
+msgid ""
+"This addon brings the screen wrapping feature to nvda.\n"
+"\tWhen you press quick navigation keys such as h, b, f and others, you will "
+"be placed on the next element regardless of your current position on a "
+"webpage.\n"
+"\tIf elements are not found below your position, you will be placed at the "
+"first element of the requested type available from the beginning of the page "
+"and vice versa when you are searching upwards. this also extends to the find "
+"dialog of nvda."
+msgstr ""
+"Diese Erweiterung bringt die Navigationsschleife-Funktion zum Lesemodus.\n"
+"\\tWenn Sie Schnellnavigationstasten wie h, b, f und andere drücken, werden "
+"Sie unabhängig von Ihrer aktuellen Position auf einer Webseite zum nächsten "
+"Element weitergeleitet.\n"
+"\\tWenn unter Ihrer Position keine neuen Elemente gefunden werden, werden "
+"Sie zum ersten verfügbaren Element des gewünschten Typs am Anfang der Seite "
+"weitergeleitet und umgekehrt, wenn Sie nach oben suchen. Dies gilt auch für "
+"den Suchdialog von NVDA.\n"
+"Übersetzt von \"NVDA Nachhaltig\" - BFW Würzburg."

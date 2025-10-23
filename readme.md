@@ -31,4 +31,6 @@ Here is the list of all contributors:
 
 * cary-rowen (Simplified Chinese translation and exposed more strings for translators)
 
+* Rainer Brell (German translation)
+
 [1]: https://github.com/hamadatrichine/nvda-screen-wrapping/releases/latest
