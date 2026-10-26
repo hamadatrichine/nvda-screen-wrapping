@@ -15,7 +15,7 @@ from . import wrappingFind, wrappingQuickNav, wrappingAlerts, wrappingSettingsGu
 
 addonHandler.initTranslation()
 
-confspec = {"isActive":"boolean(default=True)", "turnOnBeeps":"boolean(default=True)"}
+confspec = {"isActive":"boolean(default=True)", "turnOnBeeps":"boolean(default=True)", "turnOnFindWrap": "boolean(default=True)"}
 config.conf.spec["screenWrapping"] = confspec
 
 def defaultPluginOnSecure(cls):
@@ -38,12 +38,14 @@ class GlobalPlugin(GlobalPlugin):
 		BrowseModeTreeInterceptor._quickNavScript = wrappingQuickNav.quickNavWrapping
 		cursorManager.CursorManager.doFindText = wrappingFind.customDoFindText
 		setattr(cursorManager.CursorManager, '_wrapFind', True)
-		cursorManager.FindDialog = wrappingFind.CustomFindDialog	
+		if config.conf["screenWrapping"]["turnOnFindWrap"]:
+			cursorManager.FindDialog = wrappingFind.CustomFindDialog	
 
 	def clean(self):
 		BrowseModeTreeInterceptor._quickNavScript = self.oldQuickNav
 		cursorManager.CursorManager.doFindText = self.oldFindBackend
-		cursorManager.FindDialog = self.oldFindDialog
+		if isinstance(cursorManager.FindDialog, wrappingFind.CustomFindDialog):
+			cursorManager.FindDialog = self.oldFindDialog
 		setattr(cursorManager.CursorManager, '_wrapFind', None)
 
 	@script(
