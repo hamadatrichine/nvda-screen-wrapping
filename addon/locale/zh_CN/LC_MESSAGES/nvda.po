@@ -5,10 +5,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: 'screenWrapping' '1.8'\n"
+"Project-Id-Version: 'screenWrapping' '26.2'\n"
 "Report-Msgid-Bugs-To: nvda-translations@groups.io\n"
-"POT-Creation-Date: 2022-05-23 20:33+0800\n"
-"PO-Revision-Date: 2022-05-23 20:34+0800\n"
+"POT-Creation-Date: 2026-10-26 13:16+0100\n"
+"PO-Revision-Date: 2026-10-26 13:23+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: zh_CN\n"
@@ -19,32 +19,32 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #. Translators: A discription for the toggleScreenWrapping script.
-#: addon\globalPlugins\screenWrapping\__init__.py:46
+#: addon\globalPlugins\screenWrapping\__init__.py:53
 msgid "Activates and deactivates the screen wrapping feature."
 msgstr "开关循环浏览功能"
 
 #. Translators: Text spoken when screen wrapping to bottom.
-#: addon\globalPlugins\screenWrapping\wrappingAlerts.py:21
+#: addon\globalPlugins\screenWrapping\wrappingAlerts.py:23
 msgid "wrapping to bottom"
 msgstr "底部"
 
 #. Translators: Text spoken when screen wrapping to top.
-#: addon\globalPlugins\screenWrapping\wrappingAlerts.py:25
+#: addon\globalPlugins\screenWrapping\wrappingAlerts.py:27
 msgid "wrapping to top"
 msgstr "顶部"
 
-#. Translators: Text spoken when screen rapping is turned off.
-#: addon\globalPlugins\screenWrapping\wrappingAlerts.py:32
+#. Translators: Text spoken when screen wrapping is turned off.
+#: addon\globalPlugins\screenWrapping\wrappingAlerts.py:34
 msgid "Screen wrapping off."
 msgstr "关闭循环浏览"
 
-#. Translators: Text spoken when screen rapping is turned on.
-#: addon\globalPlugins\screenWrapping\wrappingAlerts.py:37
+#. Translators: Text spoken when screen wrapping is turned on.
+#: addon\globalPlugins\screenWrapping\wrappingAlerts.py:39
 msgid "Screen wrapping on."
 msgstr "开启循环浏览"
 
 #. Translators: An option in the find dialog to allow wrapping on search.
-#: addon\globalPlugins\screenWrapping\wrappingFind.py:31
+#: addon\globalPlugins\screenWrapping\wrappingFind.py:94
 msgid "&Wrap around"
 msgstr "循环查找"
 
@@ -58,10 +58,27 @@ msgstr "循环浏览"
 msgid "&Play a beep when wrapping"
 msgstr "开关 / 循环到首尾时播放风鸣音(&P)"
 
-#. Translators: Text for the button in the settings that copys the donation E-mail to the clipboard.
+#. Translators: Text for the check box in the settings that turns on or off the custom find dialog.
 #: addon\globalPlugins\screenWrapping\wrappingSettingsGui.py:18
-msgid "&Copy PayPal donation E-mail to clipboard"
-msgstr "复制 PayPal 捐赠账户到剪贴板(&C)"
+msgid "&Enable wrapping functionality for find, requires restart"
+msgstr "启用循环查找功能，需要重启(&E)"
+
+#. Translators: Text for the donations button.
+#: addon\globalPlugins\screenWrapping\wrappingSettingsGui.py:21
+msgid "&Buy me a coffee"
+msgstr "请我喝杯咖啡(&B)"
+
+#. Translators: donation dialog title.
+#: addon\installTasks.py:12
+msgid "Would you like to donate?"
+msgstr "您愿意捐赠吗？"
+
+#. Translators: donation dialog message.
+#: addon\installTasks.py:14
+msgid ""
+"If you like my work, please consider buying me a coffee. You can always find "
+"this option under nvda settings/screen wrapping"
+msgstr "如果您喜欢我的作品，请考虑请我喝杯咖啡。您随时可以在 NVDA 设置的“循环浏览”类别中找到此选项。"
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on
@@ -85,20 +102,5 @@ msgid ""
 msgstr ""
 "这个插件为 nvda 增加了循环浏览功能。\n"
 "在您使用单键导航如 h、b、f 过程中，会向下跳转相应的元素。\n"
-"如果往下找不到元素，则会从头开始继续按相应元素类型跳转，反之亦然，向上跳转也"
-"是如此。\n"
-"当然，该功能对于 NVDA 的查找功能也试用。"
-
-#~ msgid "Would you like to donate?"
-#~ msgstr "您愿意捐赠该插件吗"
-
-#~ msgid ""
-#~ "If you like my work, please consider donating. Any contribution you can "
-#~ "give helps me to keep going. My paypal E-mail is hatrichine25@gmail.com. "
-#~ "Would you like to copy it to your clipboard? You can always find it under "
-#~ "nvda settings/screen wrapping"
-#~ msgstr ""
-#~ "如果您喜欢我的作品，请考虑捐赠。\n"
-#~ "您的支持就是我前进的动力。\n"
-#~ "我的 Paypal 账户是 hatrichine25@gmail.com 您想将其复制到剪贴板吗？\n"
-#~ "您日后还可以在 nvda 设置 > “循环浏览”类别下找到该捐赠方式。"
+"如果往下找不到元素，则会从头开始继续按相应元素类型跳转，反之亦然，向上跳转也是如此。\n"
+"当然，该功能对于 NVDA 的查找功能也适用。"

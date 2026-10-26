@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: ScreenRapping\n"
+"Project-Id-Version: 'screenWrapping' '26.2'\n"
 "Report-Msgid-Bugs-To: nvda-translations@groups.io\n"
-"POT-Creation-Date: 2023-04-01 23:00-0300\n"
-"PO-Revision-Date: 2025-10-23 11:12+0200\n"
+"POT-Creation-Date: 2026-10-26 13:16+0100\n"
+"PO-Revision-Date: 2026-10-26 13:23+0100\n"
 "Last-Translator: Ângelo Miguel Abrantes <ampa4374@gmail.com>\n"
 "Language-Team: \"NVDA Nachhaltig\" - BFW Würzburg\n"
 "Language: de\n"
@@ -17,7 +17,7 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 
 #. Translators: A discription for the toggleScreenWrapping script.
-#: addon\globalPlugins\screenWrapping\__init__.py:46
+#: addon\globalPlugins\screenWrapping\__init__.py:53
 msgid "Activates and deactivates the screen wrapping feature."
 msgstr "Aktiviert und deaktiviert die Navigationsschleife-Funktion."
 
@@ -42,7 +42,7 @@ msgid "Screen wrapping on."
 msgstr "Navigationsschleife ein."
 
 #. Translators: An option in the find dialog to allow wrapping on search.
-#: addon\globalPlugins\screenWrapping\wrappingFind.py:33
+#: addon\globalPlugins\screenWrapping\wrappingFind.py:94
 msgid "&Wrap around"
 msgstr "&Navigationsschleife verwenden"
 
@@ -56,10 +56,30 @@ msgstr "Navigationsschleife"
 msgid "&Play a beep when wrapping"
 msgstr "&Ton beim Springen"
 
-#. Translators: Text for the button in the settings that copys the donation E-mail to the clipboard.
+#. Translators: Text for the check box in the settings that turns on or off the custom find dialog.
 #: addon\globalPlugins\screenWrapping\wrappingSettingsGui.py:18
-msgid "&Copy PayPal donation E-mail to clipboard"
-msgstr "&PayPal-E-Mail zum Spenden in die Zwischenablage kopieren"
+msgid "&Enable wrapping functionality for find, requires restart"
+msgstr "&Suchfunktion mit Navigationsschleife aktivieren, erfordert Neustart"
+
+#. Translators: Text for the donations button.
+#: addon\globalPlugins\screenWrapping\wrappingSettingsGui.py:21
+msgid "&Buy me a coffee"
+msgstr "&Spendiere mir einen Kaffee"
+
+#. Translators: donation dialog title.
+#: addon\installTasks.py:12
+msgid "Would you like to donate?"
+msgstr "Möchten Sie spenden?"
+
+#. Translators: donation dialog message.
+#: addon\installTasks.py:14
+msgid ""
+"If you like my work, please consider buying me a coffee. You can always find "
+"this option under nvda settings/screen wrapping"
+msgstr ""
+"Wenn Ihnen meine Arbeit gefällt, können Sie mir einen Kaffee spendieren. "
+"Diese Option finden Sie jederzeit in den NVDA-Einstellungen unter "
+"Navigationsschleife."
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on
@@ -82,11 +102,11 @@ msgid ""
 "dialog of nvda."
 msgstr ""
 "Diese Erweiterung bringt die Navigationsschleife-Funktion zum Lesemodus.\n"
-"\\tWenn Sie Schnellnavigationstasten wie h, b, f und andere drücken, werden "
-"Sie unabhängig von Ihrer aktuellen Position auf einer Webseite zum nächsten "
-"Element weitergeleitet.\n"
-"\\tWenn unter Ihrer Position keine neuen Elemente gefunden werden, werden "
-"Sie zum ersten verfügbaren Element des gewünschten Typs am Anfang der Seite "
-"weitergeleitet und umgekehrt, wenn Sie nach oben suchen. Dies gilt auch für "
-"den Suchdialog von NVDA.\n"
+"\tWenn Sie Schnellnavigationstasten wie h, b, f und andere drücken, werden "
+"Sie unabhängig von Ihrer aktuellen Position auf einer Webseite zum "
+"nächsten Element weitergeleitet.\n"
+"\tWenn unter Ihrer Position keine neuen Elemente gefunden werden, werden "
+"Sie zum ersten verfügbaren Element des gewünschten Typs am Anfang der "
+"Seite weitergeleitet und umgekehrt, wenn Sie nach oben suchen. Dies gilt "
+"auch für den Suchdialog von NVDA.\n"
 "Übersetzt von \"NVDA Nachhaltig\" - BFW Würzburg."

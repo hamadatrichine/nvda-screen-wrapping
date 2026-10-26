@@ -1,12 +1,12 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: ScreenRapping\n"
+"Project-Id-Version: 'screenWrapping' '26.2'\n"
 "Report-Msgid-Bugs-To: nvda-translations@groups.io\n"
-"POT-Creation-Date: 2023-04-01 23:00-0300\n"
-"PO-Revision-Date: 2024-04-15 12:50+0100\n"
+"POT-Creation-Date: 2026-10-26 13:16+0100\n"
+"PO-Revision-Date: 2026-10-26 13:23+0100\n"
 "Last-Translator: Ângelo Miguel Abrantes <ampa4374@gmail.com>\n"
-"Language-Team: Equipa Portuguesa do NVDA <ampa4374@gmail.com; rui."
-"fontes@tiflotecnia.com>\n"
+"Language-Team: Equipa Portuguesa do NVDA <ampa4374@gmail.com; "
+"rui.fontes@tiflotecnia.com>\n"
 "Language: pt_PT\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -18,7 +18,7 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 
 #. Translators: A discription for the toggleScreenWrapping script.
-#: addon\globalPlugins\screenWrapping\__init__.py:46
+#: addon\globalPlugins\screenWrapping\__init__.py:53
 msgid "Activates and deactivates the screen wrapping feature."
 msgstr "Activar ou desactivar o loop de ecrã."
 
@@ -43,7 +43,7 @@ msgid "Screen wrapping on."
 msgstr "Loop de ecrã activado."
 
 #. Translators: An option in the find dialog to allow wrapping on search.
-#: addon\globalPlugins\screenWrapping\wrappingFind.py:33
+#: addon\globalPlugins\screenWrapping\wrappingFind.py:94
 msgid "&Wrap around"
 msgstr "&Localizar em loop"
 
@@ -57,10 +57,29 @@ msgstr "Loop de ecrã"
 msgid "&Play a beep when wrapping"
 msgstr "&Tocar um beep ao navegar em loop"
 
-#. Translators: Text for the button in the settings that copys the donation E-mail to the clipboard.
+#. Translators: Text for the check box in the settings that turns on or off the custom find dialog.
 #: addon\globalPlugins\screenWrapping\wrappingSettingsGui.py:18
-msgid "&Copy PayPal donation E-mail to clipboard"
-msgstr "&Copiar e-mail de doação do Paypal para a área de transferência"
+msgid "&Enable wrapping functionality for find, requires restart"
+msgstr "&Activar a pesquisa em loop, requer reinício"
+
+#. Translators: Text for the donations button.
+#: addon\globalPlugins\screenWrapping\wrappingSettingsGui.py:21
+msgid "&Buy me a coffee"
+msgstr "&Ofereça-me um café"
+
+#. Translators: donation dialog title.
+#: addon\installTasks.py:12
+msgid "Would you like to donate?"
+msgstr "Gostaria de fazer um donativo?"
+
+#. Translators: donation dialog message.
+#: addon\installTasks.py:14
+msgid ""
+"If you like my work, please consider buying me a coffee. You can always find "
+"this option under nvda settings/screen wrapping"
+msgstr ""
+"Se gosta do meu trabalho, considere oferecer-me um café. Pode encontrar "
+"esta opção a qualquer momento nas definições do NVDA, em Loop de ecrã."
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on
@@ -82,10 +101,11 @@ msgid ""
 "and vice versa when you are searching upwards. this also extends to the find "
 "dialog of nvda."
 msgstr ""
-"Este extra trás o loop de ecran para o NVDA.\n"
-"Quando pressiona as teclas de navegação rápida, tais como h, b, f ou outras, "
-"será posicionado no próximo elemento do tipo solicitado independentemente da "
-"posição actual em que está no texto.\n"
-"Se o elemento sollicitado não for encontrado abaixo da posição actual, será "
-"posicionado no primeiro elemento do tipo solicitado no texto. O inverso "
-"acontece se estiver a procurar por elementos na ordem reversa."
+"Este extra traz o loop de ecrã para o NVDA.\n"
+"\tQuando pressiona as teclas de navegação rápida, tais como h, b, f e "
+"outras, será posicionado no próximo elemento independentemente da sua "
+"posição actual numa página Web.\n"
+"\tSe não forem encontrados elementos abaixo da sua posição, será "
+"posicionado no primeiro elemento do tipo solicitado a partir do início da "
+"página, e vice-versa quando pesquisa para cima. Isto também se aplica ao "
+"diálogo de pesquisa do NVDA."
